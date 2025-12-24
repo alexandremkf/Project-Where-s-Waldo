@@ -1,3 +1,25 @@
 body {
   font-family: Arial, sans-serif;
 }
+
+#game-container {
+  position: relative;
+  display: inline-block;
+}
+
+#game-image {
+  max-width: 100%;
+  display: block;
+}
+
+.target-box {
+  position: absolute;
+  border: 2px solid red;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 4px;
+  z-index: 10;
+}
+
+.target-box select {
+  width: 100%;
+}
