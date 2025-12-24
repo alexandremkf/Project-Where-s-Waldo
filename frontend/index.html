@@ -9,12 +9,17 @@
 
   <h1>Where's Waldo</h1>
 
-  <div id="game-container">
-    <img
-      id="game-image"
-      src="waldo.jpg"
-      alt="Where's Waldo"
-    />
+  <div id="game-wrapper" style="display: flex; gap: 20px;">
+    <!-- Container da imagem e do cronômetro -->
+    <div id="game-container" style="position: relative; display: inline-block;">
+      <img id="game-image" src="waldo.jpg" alt="Where's Waldo" />
+    </div>
+
+    <!-- Ranking -->
+    <div id="ranking-container" style="width: 200px;">
+      <h2>🏆 Ranking</h2>
+      <ol id="ranking-list"></ol>
+    </div>
   </div>
 
   <script src="main.js"></script>
