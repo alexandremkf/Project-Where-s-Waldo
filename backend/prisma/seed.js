@@ -3,6 +3,12 @@ import { PrismaClient } from '@prisma/client';
 const prisma = new PrismaClient();
 
 async function main() {
+  // Deleta tudo para testes repetidos
+  await prisma.foundCharacter.deleteMany();
+  await prisma.character.deleteMany();
+  await prisma.image.deleteMany();
+  await prisma.gameSession.deleteMany();
+
   const image = await prisma.image.create({
     data: {
       name: "Waldo Map 1",
